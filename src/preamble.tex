@@ -1,0 +1,58 @@
+% preamble.tex - Gemeinsame Präambel für alle Übungsblätter
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{amsmath,amssymb}
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage{tikz}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.17}
+
+% Seitenränder
+\geometry{margin=2cm}
+
+% Kopf- und Fußzeilen-Stil
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\footrulewidth}{0.5pt}
+
+% Standard Kopf- und Fußzeile (kann in jedem Blatt überschrieben werden)
+\lhead{Mathematik 6. Klasse - Mittelschule}
+\chead{}
+\rhead{Datum: \underline{\hspace{3cm}}}
+\lfoot{Name: \underline{\hspace{5cm}}}
+
+% Anpassungen für bessere Lesbarkeit
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.5em}
+
+% Eigene Befehle für häufig verwendete Elemente
+\newcommand{\antwortlinie}[1]{\underline{\hspace{#1}}}
+\newcommand{\rechnung}{\vspace{0.3cm}Rechnung: }
+\newcommand{\antwort}{\vspace{0.3cm}Antwort: }
+
+% Farben für Hervorhebungen
+\definecolor{hinweis}{RGB}{0,102,204}
+\definecolor{wichtig}{RGB}{204,0,0}
+
+% Befehl für Hinweisboxen
+\newcommand{\hinweisbox}[1]{%
+\vspace{0.5cm}
+\noindent\fbox{\parbox{0.95\textwidth}{\textit{#1}}}
+\vspace{0.5cm}
+}
+
+% Befehl für Motivationsboxen am Ende
+\newcommand{\motivationsbox}[1]{%
+\vspace{1cm}
+\begin{center}
+\fbox{\Large #1}
+\end{center}
+}

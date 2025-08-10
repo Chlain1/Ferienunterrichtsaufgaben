@@ -1,0 +1,20 @@
+% Überschrift mit Blattnummer und Thema
+\section*{\centering Übungsblatt \blattnummer: \blattthema}
+\subsection*{\centering Bearbeitungszeit: \bearbeitungszeit\ Minuten}
+
+% Optionale Lernziele (kann definiert werden)
+\ifdefined\lernziele
+\hinweisbox{\textbf{Lernziele:} \lernziele}
+\fi
+
+% Optionale Hilfsmittel (kann definiert werden)
+\ifdefined\hilfsmittel
+\noindent\textbf{Erlaubte Hilfsmittel:} \hilfsmittel
+\vspace{0.5cm}
+\fi
+
+% Optionale Bearbeitungshinweise
+\ifdefined\bearbeitungshinweise
+\noindent\textit{\bearbeitungshinweise}
+\vspace{0.5cm}
+\fi

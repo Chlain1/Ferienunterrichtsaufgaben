@@ -1,0 +1,56 @@
+% footer_template.tex - Vorlage für das Ende jedes Blattes
+% Verwendung:
+% \newcommand{\motivationstext}{Geschafft! Kontrolliere nochmal deine Lösungen!}
+% \input{footer_template}
+
+% Motivationsbox am Ende (wenn definiert)
+\motivationsbox{Geschafft! Kontrolliere nochmal deine Lösungen!}
+
+% Optionale Zusatzinformationen
+\ifdefined\zusatzinfo
+\vspace{0.5cm}
+\begin{center}
+\zusatzinfo
+\end{center}
+\fi
+
+% Optionaler Platz für Notizen
+\ifdefined\notizbereich
+\vspace{1cm}
+\noindent\textbf{Notizen / Fragen:}
+\vspace{0.3cm}
+
+\noindent\rule{\textwidth}{0.5pt}
+\vspace{0.3cm}
+
+\noindent\rule{\textwidth}{0.5pt}
+\vspace{0.3cm}
+
+\noindent\rule{\textwidth}{0.5pt}
+\vspace{0.3cm}
+
+\noindent\rule{\textwidth}{0.5pt}
+\fi
+
+% Optionale Selbsteinschätzung
+\ifdefined\selbsteinschaetzung
+\vspace{1cm}
+\noindent\textbf{Selbsteinschätzung:} Wie gut konntest du die Aufgaben lösen?
+
+\vspace{0.3cm}
+\begin{center}
+\begin{tabular}{|l|c|c|c|c|}
+\hline
+& sehr gut & gut & geht so & schwierig \\
+\hline
+Teil A & $\square$ & $\square$ & $\square$ & $\square$ \\
+\hline
+Teil B & $\square$ & $\square$ & $\square$ & $\square$ \\
+\hline
+Teil C & $\square$ & $\square$ & $\square$ & $\square$ \\
+\hline
+Teil D & $\square$ & $\square$ & $\square$ & $\square$ \\
+\hline
+\end{tabular}
+\end{center}
+\fi
