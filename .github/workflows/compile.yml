@@ -15,4 +15,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: PDF
-          path: rs6_tag1.pdf
+          path: blaetter/rs6_tag1.pdf
