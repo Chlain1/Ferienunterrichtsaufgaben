@@ -10,7 +10,7 @@ jobs:
         uses: xu-cheng/latex-action@v4
         with:
           root_file: blaetter/rs6_tag1.tex
-          working_directory: .
+          working-directory: .
       - name: Upload PDF file
         uses: actions/upload-artifact@v4
         with:
