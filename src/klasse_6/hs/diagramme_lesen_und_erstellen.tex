@@ -1,0 +1,64 @@
+\subsection*{Teil A: Diagramme lesen und erstellen (25 Minuten)}
+
+\begin{enumerate}[label=\arabic*.]
+    \item \textbf{Lieblingsfächer der Klasse 6a:}
+    \begin{itemize}
+        \item Mathe: 8 Schüler
+        \item Deutsch: 4 Schüler
+        \item Sport: 10 Schüler
+        \item Englisch: 6 Schüler
+    \end{itemize}
+
+    \begin{enumerate}[label=\alph*)]
+        \item Erstelle ein Säulendiagramm:
+
+        \begin{center}
+            \begin{tikzpicture}[scale=0.8]
+                \draw[thick,->] (0,0) -- (0,11) node[above] {Anzahl Schüler};
+                \draw[thick,->] (0,0) -- (10,0);
+                \foreach \y in {0,2,4,6,8,10}
+                \draw (-0.1,\y) -- (0.1,\y) node[left] {\y};
+                % Beschriftung für Fächer
+                \node at (1.5,-0.5) {Mathe};
+                \node at (3.5,-0.5) {Deutsch};
+                \node at (5.5,-0.5) {Sport};
+                \node at (7.5,-0.5) {Englisch};
+                % Leere Säulen zum Ausfüllen
+                \draw (1,0) rectangle (2,0.1);
+                \draw (3,0) rectangle (4,0.1);
+                \draw (5,0) rectangle (6,0.1);
+                \draw (7,0) rectangle (8,0.1);
+            \end{tikzpicture}
+        \end{center}
+
+        \item Wie viele Schüler wurden insgesamt befragt? 
+
+        Rechnung: $8 + 4 + 10 + 6$ = \underline{\hspace{3cm}}
+
+        \item Welches Fach ist am beliebtesten? \underline{\hspace{4cm}}
+    \end{enumerate}
+
+    \vspace{0.5cm}
+
+    \item \textbf{Kreisdiagramm interpretieren:} 
+
+    Ein Tag hat 24 Stunden. Die Aufteilung sieht so aus:
+    \begin{itemize}
+        \item Schule: $\dfrac{1}{4}$ des Tages
+        \item Schlafen: $\dfrac{1}{3}$ des Tages
+        \item Freizeit: Rest
+    \end{itemize}
+
+    \begin{enumerate}[label=\alph*)]
+        \item Welcher Bruchteil bleibt für Freizeit? 
+
+        Rechnung: $1 - \dfrac{1}{4} - \dfrac{1}{3} = \dfrac{12}{12} - \dfrac{3}{12} - \dfrac{4}{12}$ = \underline{\hspace{3cm}}
+
+        \item Wie viele Stunden sind das jeweils?
+        \begin{itemize}
+            \item Schule: $\dfrac{1}{4}$ von 24 h = \underline{\hspace{2cm}} h
+            \item Schlafen: $\dfrac{1}{3}$ von 24 h = \underline{\hspace{2cm}} h
+            \item Freizeit: \underline{\hspace{2cm}} h
+        \end{itemize}
+    \end{enumerate}
+\end{enumerate}
