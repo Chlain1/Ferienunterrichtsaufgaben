@@ -23,7 +23,7 @@ jobs:
         uses: xu-cheng/latex-action@v4
         with:
           root_file: ${{ steps.list_tex.outputs.files }}
-          working_directory: .
+          work_in_root_file_dir: true
       - name: Upload PDF file
         uses: actions/upload-artifact@v4
         with:
