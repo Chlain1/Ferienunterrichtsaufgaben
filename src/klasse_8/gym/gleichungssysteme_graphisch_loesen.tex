@@ -1,0 +1,63 @@
+\subsection*{Teil A: Gleichungssysteme graphisch lösen (30 Minuten)}
+
+\begin{enumerate}[label=\arabic*.]
+
+    \item \textbf{Zeichne beide Geraden und bestimme den Schnittpunkt:}
+    \vspace{0.5cm}
+
+    Gegeben: $\begin{cases} y = x + 1 \\ y = -x + 3 \end{cases}$
+
+    \begin{center}
+        \begin{tikzpicture}[scale=0.8]
+            \draw[step=1cm,gray,very thin] (-1,-1) grid (5,5);
+            \draw[thick,->] (-1,0) -- (5,0) node[anchor=north west] {$x$};
+            \draw[thick,->] (0,-1) -- (0,5) node[anchor=south east] {$y$};
+            \foreach \x in {1,2,3,4}
+            \draw (\x cm,1pt) -- (\x cm,-1pt) node[anchor=north] {$\x$};
+            \foreach \y in {1,2,3,4}
+            \draw (1pt,\y cm) -- (-1pt,\y cm) node[anchor=east] {$\y$};
+        \end{tikzpicture}
+    \end{center}
+
+    \vspace{0.5cm}
+    Wertetabelle für $y = x + 1$:
+    \begin{center}
+        \begin{tabular}{|c|c|c|}
+            \hline
+            $x$ & 0 & 2 \\
+            \hline
+            $y$ & \phantom{1} & \phantom{3} \\
+            \hline
+        \end{tabular}
+    \end{center}
+
+    Wertetabelle für $y = -x + 3$:
+    \begin{center}
+        \begin{tabular}{|c|c|c|}
+            \hline
+            $x$ & 0 & 3 \\
+            \hline
+            $y$ & \phantom{3} & \phantom{0} \\
+            \hline
+        \end{tabular}
+    \end{center}
+
+    Schnittpunkt: $S($ \underline{\hspace{1cm}} $|$ \underline{\hspace{1cm}} $)$
+
+    \vspace{1cm}
+
+    \item \textbf{Bestimme ohne Zeichnung, welche Aussage richtig ist:}
+    \vspace{0.5cm}
+
+    \begin{tabular}{ll}
+        a) $\begin{cases} y = 2x + 1 \\ y = 2x + 3 \end{cases}$ & 
+        $\square$ genau eine Lösung \quad $\square$ keine Lösung \quad $\square$ unendlich viele Lösungen \\[3ex]
+
+        b) $\begin{cases} y = x - 2 \\ y = -x + 4 \end{cases}$ & 
+        $\square$ genau eine Lösung \quad $\square$ keine Lösung \quad $\square$ unendlich viele Lösungen \\[3ex]
+
+        c) $\begin{cases} y = 3x + 1 \\ 2y = 6x + 2 \end{cases}$ & 
+        $\square$ genau eine Lösung \quad $\square$ keine Lösung \quad $\square$ unendlich viele Lösungen
+    \end{tabular}
+
+\end{enumerate}
