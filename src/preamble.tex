@@ -5,6 +5,7 @@
 \usepackage{amsmath,amssymb}
 \usepackage{geometry}
 \usepackage{enumitem}
+\usepackage{enumerate}
 \usepackage{tikz}
 \usepackage{array}
 \usepackage{multirow}
@@ -12,6 +13,8 @@
 \usepackage{fancyhdr}
 \usepackage{lastpage}
 \usepackage{pgfplots}
+\usepackage{xcolor}
+\usepackage{tcolorbox}
 \pgfplotsset{compat=1.17}
 
 % Seitenränder
@@ -55,4 +58,18 @@
 \begin{center}
 \fbox{\Large #1}
 \end{center}
+}
+
+\newtcolorbox{merkbox}[1][]{
+    colback=blue!5!white,
+    colframe=blue!50!black,
+    fonttitle=\bfseries,
+    title=#1
+}
+
+\newtcolorbox{beispielbox}[1][]{
+    colback=green!5!white,
+    colframe=green!50!black,
+    fonttitle=\bfseries,
+    title=#1
 }
