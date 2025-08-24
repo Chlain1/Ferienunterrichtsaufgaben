@@ -1,0 +1,63 @@
+\subsection*{Teil A: 3D-Koordinatensystem (20 Minuten)}
+
+\begin{enumerate}[label=\arabic*.]
+
+    \item \textbf{Koordinaten ablesen:}
+
+    \begin{center}
+        \begin{tikzpicture}[scale=0.8]
+        \tdplotsetmaincoords{70}{110}
+            \begin{scope}[tdplot_main_coords]
+                % Achsen
+                \draw[thick,->] (0,0,0) -- (4,0,0) node[anchor=north east]{x};
+                \draw[thick,->] (0,0,0) -- (0,4,0) node[anchor=north west]{y};
+                \draw[thick,->] (0,0,0) -- (0,0,4) node[anchor=south]{z};
+                
+                % Punkte
+                \coordinate (A) at (2,1,3);
+                \coordinate (B) at (3,2,1);
+                \coordinate (C) at (1,3,2);
+                
+                \fill[red] (A) circle (2pt) node[above right]{A};
+                \fill[blue] (B) circle (2pt) node[above right]{B};
+                \fill[green] (C) circle (2pt) node[above right]{C};
+                
+                % Hilfslinien
+                \draw[dashed] (A) -- (2,1,0);
+                \draw[dashed] (2,1,0) -- (2,0,0);
+                \draw[dashed] (2,1,0) -- (0,1,0);
+            \end{scope}
+        \end{tikzpicture}
+    \end{center}
+
+    Gib die Koordinaten der Punkte an:
+
+    A(\underline{\hspace{1cm}}|\underline{\hspace{1cm}}|\underline{\hspace{1cm}}) \hspace{2cm}
+    B(\underline{\hspace{1cm}}|\underline{\hspace{1cm}}|\underline{\hspace{1cm}}) \hspace{2cm}
+    C(\underline{\hspace{1cm}}|\underline{\hspace{1cm}}|\underline{\hspace{1cm}})
+
+    \vspace{1cm}
+
+    \item \textbf{Punkte einzeichnen:}
+
+    Zeichne die Punkte D(1|2|3) und E(3|1|2) in das Koordinatensystem ein:
+
+    \begin{center}
+        \begin{tikzpicture}[scale=0.8]
+            \tdplotsetmaincoords{70}{110}
+            \begin{scope}[tdplot_main_coords]
+                \draw[thick,->] (0,0,0) -- (4,0,0) node[anchor=north east]{x};
+                \draw[thick,->] (0,0,0) -- (0,4,0) node[anchor=north west]{y};
+                \draw[thick,->] (0,0,0) -- (0,0,4) node[anchor=south]{z};
+                
+                % Gitternetz
+                \foreach \x in {1,2,3} {
+                    \draw[gray, thin] (\x,0,0) -- (\x,3,0);
+                    \draw[gray, thin] (0,\x,0) -- (3,\x,0);
+                    \draw[gray, thin] (0,0,\x) -- (3,0,\x);
+                }
+            \end{scope}
+        \end{tikzpicture}
+    \end{center}
+
+\end{enumerate}
