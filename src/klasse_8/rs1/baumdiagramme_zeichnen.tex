@@ -1,0 +1,50 @@
+\subsection*{Teil B: Prüfen und Baumdiagramm zeichnen (45 Minuten)}
+
+Gehe bei jeder Aufgabe so vor:
+\begin{enumerate}[label=\arabic*.]
+    \item Entscheide, ob ein Zufallsexperiment vorliegt, und begründe kurz.
+    \item Falls ja: Zeichne ein vollständiges Baumdiagramm.
+    \item Gib den Ergebnisraum $\Omega$ an und zähle, wie viele Ergebnisse es gibt.
+\end{enumerate}
+
+% Aufgabe mit Antwortbereich, die nicht über einen Seitenumbruch getrennt wird
+% #1 = Aufgabentext, #2 = Höhe des Platzes für das Baumdiagramm
+\newcommand{\baumaufgabe}[2]{%
+    \item \begin{minipage}[t]{\linewidth}
+    #1
+
+    \vspace{0.2cm}
+    Zufallsexperiment? \; $\square$ ja \; $\square$ nein \qquad Begründung: \antwortlinie{5.5cm}
+
+    \vspace{0.2cm}
+    Baumdiagramm:
+    \vspace{#2}
+
+    $\Omega = $ \antwortlinie{10cm} \qquad Anzahl: \antwortlinie{1.5cm}
+    \end{minipage}
+    \vspace{0.6cm}
+}
+
+\begin{enumerate}[label=\textbf{B\arabic*}]
+
+    \baumaufgabe{Eine Münze wird zweimal hintereinander geworfen. Notiert wird jeweils Wappen (W) oder Zahl (Z).}{4cm}
+
+    \baumaufgabe{Ein Würfel wird einmal geworfen. Notiert wird nur, ob die Augenzahl gerade (g) oder ungerade (u) ist.}{2.5cm}
+
+    \baumaufgabe{In einer Urne liegen 2 rote (r) und 1 grüne (g) Kugel. Es wird eine Kugel gezogen, ihre Farbe notiert und die Kugel \textbf{zurückgelegt}. Dann wird ein zweites Mal gezogen.}{4cm}
+
+    \baumaufgabe{Gleiche Urne wie in B3, aber die erste Kugel wird \textbf{nicht zurückgelegt}, bevor man das zweite Mal zieht.}{4cm}
+
+    \baumaufgabe{Lukas schaut im Kalender nach, wie viele Tage eine Woche hat.}{1cm}
+
+    \baumaufgabe{Ein Glücksrad hat drei Felder: Rot (R), Gelb (G) und Blau (B). Es wird zweimal gedreht.}{5.5cm}
+
+    \baumaufgabe{Emma schaut auf ihren Stundenplan, welches Fach sie am Montag in der 1.~Stunde hat.}{1cm}
+
+    \baumaufgabe{Eine Münze wird dreimal hintereinander geworfen (W oder Z).}{6cm}
+
+    \baumaufgabe{Drei Karten mit den Buchstaben A, B und C liegen verdeckt auf dem Tisch. Tim zieht nacheinander zwei Karten, ohne sie zurückzulegen, und legt sie in der gezogenen Reihenfolge nebeneinander.}{5cm}
+
+    \baumaufgabe{In Lisas Schrank liegen eine Jeans (J) und eine kurze Hose (K) sowie ein weißes (w), ein schwarzes (s) und ein rotes (r) T-Shirt. Im Dunkeln greift sie blind zuerst eine Hose und dann ein T-Shirt.}{5cm}
+
+\end{enumerate}
